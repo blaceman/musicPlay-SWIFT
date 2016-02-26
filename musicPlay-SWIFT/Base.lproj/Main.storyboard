@@ -119,8 +119,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAv-Ca-4mR">
                                         <rect key="frame" x="0.0" y="0.0" width="640" height="237"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music-s.png" translatesAutoresizingMaskIntoConstraints="NO" id="CbZ-IJ-TNe">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="music-s.png" translatesAutoresizingMaskIntoConstraints="NO" id="CbZ-IJ-TNe">
                                                 <rect key="frame" x="88" y="52" width="150" height="150"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="Uh5-cM-Imk"/>
+                                                    <constraint firstAttribute="height" constant="150" id="gPG-86-hBh"/>
+                                                </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -137,6 +141,8 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="237" id="gTC-zS-D6q"/>
                                             <constraint firstAttribute="width" constant="640" id="gUJ-ar-3d8"/>
+                                            <constraint firstItem="CbZ-IJ-TNe" firstAttribute="leading" secondItem="SAv-Ca-4mR" secondAttribute="leading" constant="88" id="oPX-2e-nPI"/>
+                                            <constraint firstAttribute="bottom" secondItem="CbZ-IJ-TNe" secondAttribute="bottom" constant="35" id="v1t-t9-vKF"/>
                                         </constraints>
                                     </view>
                                 </subviews>

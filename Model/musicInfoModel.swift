@@ -11,7 +11,7 @@ import UIKit
 class musicInfoModel: NSObject {
     var mp3Url = String()
     var identify = NSInteger()
-    var name = String()
+    var name:String?
     var picUrl = String()
     var blurPicUrl = String()
     var album = String()
